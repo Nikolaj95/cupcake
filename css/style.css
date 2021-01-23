@@ -27,6 +27,7 @@ header .link:last-child {
 
 header .link-active {
     font-weight: 600;
+    text-decoration: underline;
 }
 
 .number {
