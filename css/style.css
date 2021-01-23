@@ -1,0 +1,58 @@
+body {
+    background-color: #F471D7;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.header {
+    position: absolute;
+    width: 100%;
+    margin-top: 60px;
+}
+
+header .link {
+    text-decoration: none;
+    color: black;
+    font-weight: 400;
+    font-size: 15px;
+    margin-right: 35px;
+}
+
+header .link:last-child {
+    margin-right: 0;
+}
+
+header .link-active {
+    font-weight: 600;
+}
+
+.number {
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+    color: black;
+}
+
+.number img {
+    margin-right: 10px;
+}
+
+.number:hover {
+    text-decoration: none;
+}
+
+.cart-icon {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background: #FBEFEF url("../img/cart.png") no-repeat center;
+    margin-right: 12px;
+}
+
+.cart {
+    display: flex;
+    align-items: center;
+}
+
+.sum {
+    margin-right: 15px;
+}
