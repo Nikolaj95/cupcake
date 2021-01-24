@@ -111,7 +111,7 @@ header .link-active {
 }
 
 .categories {
-display: flex;
+    display: flex;
 }
 
 .categories-item {
@@ -128,22 +128,134 @@ display: flex;
 .categories-item:last-child {
     margin-right: 0;
 }
+
 .categories-item:hover {
     text-decoration: none;
     color: black;
 }
 
 
-.categories-item-icon{
+.categories-item-icon {
     max-width: 220px;
     height: auto;
 }
 
-.categories-item h3{
+.categories-item h3 {
     font-weight: bold;
     font-size: 15px;
     line-height: 18px;
     color: black;
     margin-left: 41px;
     text-align: left;
+}
+
+@media (max-width: 991px) {
+    .header-nav {
+        flex-direction: column;
+        justify-content: center !important;
+        align-items: center;
+    }
+
+    .header-nav a {
+        margin: 18px !important;
+        color: white;
+        font-weight: 600;
+        font-size: 20px;
+    }
+
+    .cross {
+        top: 50px;
+        right: 50px;
+        width: 26px;
+        height: 26px;
+        background: transparent;
+        border: none;
+        position: absolute;
+        padding: 0;
+    }
+
+    .cross::before, .cross::after {
+        content: "";
+        display: block;
+        width: 100%;
+        background-color: white;
+        height: 4px;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        margin: auto;
+    }
+
+    .cross::before {
+        transform: rotate(45deg);
+    }
+
+    .cross::after {
+        transform: rotate(-45deg);
+    }
+
+    .cross:focus {
+        outline: none;
+    }
+
+    .header-nav-wrap {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background: rgba(0, 0, 0, 0.9);
+        z-index: 1;
+
+    }
+
+    .hamburger {
+        background: transparent;
+        top: 50px;
+        right: 50px;
+        width: 32px;
+        height: 22px;
+        border: none;
+        padding: 0;
+        border-top: 4px solid black;
+        border-bottom: 4px solid black;
+        margin-left: 40px;
+    }
+
+    .hamburger::before {
+        content: "";
+        display: block;
+        width: 100%;
+        background-color: black;
+        height: 4px;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        margin: auto;
+    }
+
+    .hamburger:focus {
+        outline: none;
+    }
+
+}
+
+@media (max-width: 575px) {
+    .welcome {
+        text-align: center;
+    }
+    .categories {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .categories-item {
+        margin: 0 0 25px;
+    }
+    .categories-item:last-child {
+        margin-bottom: 0;
+    }
+
 }

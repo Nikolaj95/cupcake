@@ -15,21 +15,25 @@
 <body>
 <header class="header">
     <div class="container">
-        <div class="row">
-            <div class="logo col-xl-3">
+        <div class="row justify-content-between">
+            <div class="logo col-lg-3 col-md-5 col-6">
                 <img src="img/logo.svg" alt="Delicious Cake" class="w-100 h-auto">
+                <div class="phone d-xl-none">
+                    <a href="tel:+7-913-945-8949" class="number">+7-913-945-8949</a>
+                </div>
             </div>
-            <div class="col-xl-5 d-flex align-items-center">
-                <nav class="d-flex justify-content-around w-100">
+            <div class="col-lg-5 align-items-center header-nav-wrap d-none d-lg-flex">
+                <nav class="d-flex justify-content-around w-100 header-nav">
+                    <button class="cross d-lg-none"></button>
                     <a href="#" class="link link-active">Главная</a>
                     <a href="#" class="link">Торты</a>
                     <a href="#" class="link">О сервисе</a>
                     <a href="#" class="link">Контакты</a>
                 </nav>
             </div>
-            <div class="col-xl-4 d-flex align-items-center">
-                <div class="d-flex justify-content-between align-items-center w-100">
-                    <div class="phone">
+            <div class="col-xl-4 col-lg-3 col-md-5 col-6 d-flex align-items-center">
+                <div class="d-flex justify-content-xl-between justify-content-end align-items-center w-100">
+                    <div class="phone d-none d-xl-block">
                         <a href="tel:+7-913-945-8949" class="number">
                             <img src="img/phone.png" alt="phone">+7-913-945-8949
                         </a>
@@ -37,11 +41,12 @@
                     <div class="cart">
                         <div class="cart-icon">
                         </div>
-                        <span class="sum">
+                        <span class="sum d-none d-md-block">
                                 9765 р.
-                            </span>
-                        <img src="img/arrow-down.svg" alt="Открыть список">
+                         </span>
+                        <img class="d-none d-md-block" src="img/arrow-down.svg" alt="Открыть список">
                     </div>
+                    <button class="hamburger d-lg-none"></button>
                 </div>
             </div>
         </div>
@@ -69,12 +74,13 @@
                         </a>
                     </div>
                 </div>
-                <div class="cupcake col-xl-5 position-relative">
+                <div class="cupcake col-xl-5 position-relative d-none d-xl-block">
                     <img src="img/cupcake.png" alt="cupcake">
                 </div>
             </div>
         </div>
     </section>
 </main>
+<script src="script/script.js"></script>
 </body>
 </html>
