@@ -9,17 +9,14 @@ function toggle() {
     headerNavWrap.classList.toggle('d-flex');
 }
 
-
 hamburger.addEventListener('click', () => {
     toggle();
 })
 
-cross.addEventListener('click', () => {
-    toggle();
-})
-
 headerNavWrap.addEventListener('click', elem => {
-    if (elem.target.closest('a')) {
+    const target = elem.target;
+    console.log(target)
+    if (target.closest('a') || target === cross) {
         toggle();
     }
 })
